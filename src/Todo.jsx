@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Todos = () => {
+const Todo = () => {
   return (
-    <p>This is the Todos component</p>
+    <p>This is the Todo component</p>
   )
 }
 

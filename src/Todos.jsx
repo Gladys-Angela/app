@@ -17,7 +17,9 @@ console.log(todos)
   return (
     <>
     {todos ? (
-        <div>
+        <div style={{
+            display: "flex", flexWrap: "wrap"
+        }}>
             {todos.slice(0,10).map((todo) => (
                 <TodoCard key={todo.id} todo={todo} />
             ))}

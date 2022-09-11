@@ -1,9 +1,11 @@
 import React from 'react'
+import { useParams } from 'react-router-dom';
 
 const Todo = () => {
+    const { id } = useParams();
   return (
-    <p>This is the Todo component</p>
+    <h1>{`This is the Todo component and the TODO ID is: ${id}`}</h1>
   )
 }
 
-export default Todos
+export default Todo;

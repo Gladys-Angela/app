@@ -1,12 +1,19 @@
 import React from 'react';
 import './style.css';
+import {  BrowserRouter as Router,  Route,  Routes } from "react-router-dom"
+import Todos from './Todos';
+import Todo from './Todo';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <h1>React Project</h1>
+      <Router>
+        <Routes>
+        <Route exact path='/' element={<Todos/>} />
+          <Route path='/todo/:id' element={<Todo />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
 
-export default App;

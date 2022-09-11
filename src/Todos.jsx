@@ -2,7 +2,7 @@ import React from 'react'
 
 const Todos = () => {
   return (
-    <p>This is the Todos component</p>
+    <h1>This is the Todos component</h1>
   )
 }
 

@@ -18,8 +18,9 @@ console.log(todos)
     <>
     {todos ? (
         <div>
-            {todos.map((todo) => <TodoCard todo={todo} />
-            )}
+            {todos.slice(0,10).map((todo) => (
+                <TodoCard key={todo.id} todo={todo} />
+            ))}
         </div>
     ) : (
     <CircularProgress />
